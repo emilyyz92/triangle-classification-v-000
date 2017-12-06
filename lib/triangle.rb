@@ -20,9 +20,7 @@ class Triangle
 
 
   class TriangleError < StandardError
-    def message
-      puts "This is not a triangle."
-    end
+
   end
 
 end
