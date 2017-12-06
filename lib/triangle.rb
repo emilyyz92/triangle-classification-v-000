@@ -5,7 +5,7 @@ class Triangle
       if a+b>c || b+c>a || a+c>b
         if a==b && b==c
           self.kind = :equilateral
-        elsif a!=b && b!=c
+        elsif a!=b && b!=c && a!=c
           self.kind = :scalene
         else
           self.kind = :isosceles
