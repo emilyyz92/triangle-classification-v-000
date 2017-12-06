@@ -10,7 +10,7 @@ class Triangle
         else
           self.kind = :isosceles
         end
-      elsif
+      else
         begin
           raise TriangleError
         end
