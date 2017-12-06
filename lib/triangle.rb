@@ -14,6 +14,12 @@ class Triangle
         begin
           raise TriangleError
         end
+      end
+    else
+      begin
+        raise TriangleError
+      end
+    end
 
 
   class TriangleError < StandardError
