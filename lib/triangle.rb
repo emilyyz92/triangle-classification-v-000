@@ -2,12 +2,15 @@ class Triangle
   attr_accessor :kind
   def initialize(a,b,c)
     if a>0 && b>0 && c>0
-      a==b && b==c
-      self.kind = :equilateral
-    elsif a!=b && b!=c
-      self.kind = :scalene
-    elsif a==c && b!=c
-      self.kind = :isosceles
+      if a+b>c || b+c>a || a+c>b
+        if a==b && b==c
+          self.kind = :equilateral
+        elsif a!=b && b!=c
+          self.kind = :scalene
+        else
+          self.kind = :isosceles
+        end
+
 
   class TriangleError < StandardError
   end
