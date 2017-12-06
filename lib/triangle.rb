@@ -3,8 +3,8 @@ class Triangle
   def initialize(a,b,c)
     if a==b && b==c
       self.kind = :equilateral
-    elsif a==b && b!=c
-      self.kind = :isosceles
+    elsif a!=b && b!=c
+      self.kind = :scalene
     elsif a==c && b!=c
       self.kind = :isosceles
 
