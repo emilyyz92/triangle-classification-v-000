@@ -13,11 +13,15 @@ class Triangle
       else
         begin
           raise TriangleError
+        rescue TriangleError => error
+          error.message
         end
       end
     else
       begin
         raise TriangleError
+      rescue TriangleError => error
+        error.message
       end
     end
   end
