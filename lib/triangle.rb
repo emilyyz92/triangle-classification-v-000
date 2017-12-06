@@ -10,6 +10,10 @@ class Triangle
         else
           self.kind = :isosceles
         end
+      elsif
+        begin
+          raise TriangleError
+        end
 
 
   class TriangleError < StandardError
